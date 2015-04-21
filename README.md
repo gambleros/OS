@@ -16,3 +16,6 @@
 + `zadaca 1` [description](https://github.com/gambleros/OS/tree/master/lab%203/z1/description.md)
 + `zadaca 2` [description](https://github.com/gambleros/OS/tree/master/lab%203/z2/description.md)
 + `zadaca 3` [description](https://github.com/gambleros/OS/tree/master/lab%203/z3/description.md)
+
+##Lab 4
++ `Linux Voved PDF` [solution](https://github.com/gambleros/OS/tree/master/lab%204/131112.pdf)
