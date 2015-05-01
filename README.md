@@ -19,3 +19,6 @@
 
 ##Lab 4
 + `Linux Voved PDF` [solution](https://github.com/gambleros/OS/tree/master/lab%204/131112.pdf)
+
+##Lab 5
++ `Linux Pipes` [solution](https://github.com/gambleros/OS/tree/master/lab%205/lab5.pdf)
