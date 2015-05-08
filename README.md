@@ -22,3 +22,6 @@
 
 ##Lab 5
 + `Linux Pipes` [solution](https://github.com/gambleros/OS/tree/master/lab%205/lab5.pdf)
+
+##Lab 6
++ `Linux BashScripting pt1` [solution](https://github.com/gambleros/OS/tree/master/lab%206/lab6.pdf)
