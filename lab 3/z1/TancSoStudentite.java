@@ -144,7 +144,7 @@ public class TancSoStudentite {
                 synchronized (RANDOM) {
                     brojMaskiGarderoba++;
                     if (brojMaskiGarderoba > 10) {
-                        exception("Ne moze da ima poveke od 10 maski vo maskata garderoba.");
+                        exception("Ne mozhe da ima povekje od 10 mashki vo mashkata garderoba.");
                     }
                     if (brojMaskiGarderoba > maxMaskiGarderoba) {
                         maxMaskiGarderoba = brojMaskiGarderoba;
@@ -158,7 +158,7 @@ public class TancSoStudentite {
                 synchronized (RANDOM) {
                     brojZenskiGarderoba++;
                     if (brojZenskiGarderoba > 10) {
-                        exception("Ne moze da ima poveke od 10 zenski vo zenskata garderoba.");
+                        exception("Ne mozhe da ima povekje od 10 zhenski vo zhenskata garderoba.");
                     }
                     if (brojZenskiGarderoba > maxZenskiGarderoba) {
                         maxZenskiGarderoba = brojZenskiGarderoba;
@@ -169,7 +169,7 @@ public class TancSoStudentite {
                     brojZenskiGarderoba--;
                 }
             }
-            log(null, "presobleci kraj");
+            log(null, "presoblechi kraj");
         }
 
         public void tancuvaj() throws RuntimeException {
@@ -177,7 +177,7 @@ public class TancSoStudentite {
             synchronized (RANDOM) {
                 brojTancuvanja++;
                 if (brojTancuvanja > BROJ_TEREN) {
-                    exception("Ne moze paralelno da tancuvaat poveke od 3 para.");
+                    exception("Ne mozhe paralelno da tancuvaat povekje od 3 para.");
                 }
 
                 if (brojTancuvanja > maxTancuvanja) {
@@ -231,10 +231,10 @@ public class TancSoStudentite {
         }
 
         public synchronized void printLog() {
-            System.out.println("Poradi konkurentnosta za pristap za pecatenje, mozno e nekoja od porakite da ne e na soodvetnoto mesto.");
-            System.out.println("Log na izvrsuvanje na akciite:");
+            System.out.println("Poradi konkurentnosta za pristap za pechatenje, mozhno e nekoja od porakite da ne e na soodvetnoto mesto.");
+            System.out.println("Log na izvrshuvanje na akciite:");
             System.out.println("=========================");
-            System.out.println("(tip m<=>Masko, tip z<=>Zensko)");
+            System.out.println("(tip m<=>Mashko, tip z<=>Zhensko)");
             System.out.println("tip\tid\takcija/error");
             System.out.println("=========================");
             for (String l : actions) {
@@ -245,9 +245,9 @@ public class TancSoStudentite {
         public void printStatus() {
             if (!hasError) {
                 int poeni = 25;
-                System.out.println("Procesot e uspesno sinhroniziran");
+                System.out.println("Procesot e uspeshno sinhroniziran");
                 if (show.maxMaskiGarderoba == 1 || show.maxZenskiGarderoba == 1) {
-                    System.out.println("\t-no ima maksimum eden ucesnik vo garderobata.");
+                    System.out.println("\t-no ima maksimum eden uchesnik vo garderobata.");
                     poeni -= 5;
                 }
                 if (show.maxTancuvanja == 1) {
@@ -258,7 +258,7 @@ public class TancSoStudentite {
                 System.out.println("Osvoeni poeni: " + poeni);
 
             } else {
-                System.out.println("Procesot ne e sinhroniziran spored uslovite na zadacata");
+                System.out.println("Procesot ne e sinhroniziran spored uslovite na zadachata");
                 show.printLog();
                 System.out.println("Maksimum mozni poeni: 15");
             }
